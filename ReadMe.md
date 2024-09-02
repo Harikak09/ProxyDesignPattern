@@ -51,10 +51,25 @@ This namespace contains the unit tests to verify the behavior of the services.
 * ProxyObjectUnitTests.cs: Contains tests for the ProxyService.
 * ClientUnitTests.cs: Contains tests for the Program class.
 
-## Class Diagram
+## UML class diagram
+
+![Class diagram](https://github.com/Harikak09/ProxyDesignPattern/blob/master/Images/ClassDiagram.png?raw=true)
+
+## Design
+
+In the above UML class diagram, the ProxyService class implements the interface so that it can act as substitute for subject objects. It maintains a reference (realService) to the substituted object (RealObject) so that it can forward requests to it (realService.operation()).
 
 ## Environment
 
+The project builds and runs on Visual Studio Community 2022.
+
 ## Results
 
+#### Admin as user
+![Admin User](https://github.com/Harikak09/ProxyDesignPattern/blob/master/Images/Admin.png?raw=true)
+
+#### User as user
+![User user](https://github.com/Harikak09/ProxyDesignPattern/blob/master/Images/User.png?raw=true)
+
 ## Code Coverage
+![Code Coverage](https://github.com/Harikak09/ProxyDesignPattern/blob/master/Images/CodeCoverage.png?raw=true)
