@@ -53,7 +53,7 @@ This namespace contains the unit tests to verify the behavior of the services.
 
 ## UML class diagram
 
-![Class diagram](https://github.com/Harikak09/ProxyDesignPattern/blob/master/Images/ClassDiagram.png?raw=true)
+![Class diagram](https://github.com/Harikak09/ProxyDesignPattern/blob/master/Images/ClassDiagram.jpg?raw=true)
 
 ## Design
 
