@@ -57,7 +57,7 @@ This namespace contains the unit tests to verify the behavior of the services.
 
 ## Design
 
-In the above UML class diagram, the ProxyService class implements the interface so that it can act as substitute for subject objects. It maintains a reference (realService) to the substituted object (RealObject) so that it can forward requests to it (realService.operation()).
+In the UML class diagram for the Proxy Design Pattern, the ProxyService class implements the same interface as the RealObject to act as a substitute for it. The ProxyService maintains a reference to the RealObject (referred to as realService) and forwards requests to it by invoking methods like realService.operation(). This setup allows ProxyService to control access to RealObject, adding additional functionality such as access control, while still adhering to the interface contract that ensures interchangeable use of ProxyService and RealObject.
 
 ## Environment
 
