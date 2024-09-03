@@ -46,16 +46,9 @@ namespace ProxyObject
         public void Operation1()
         {
             // Check if the real service instance is null
-            if (_realservice == null)
-            {
-                // Instantiate the real service if it hasn't been created yet.
-                _realservice = new RealService();
+            _realservice ??= new RealService();
 
-            }
-            else
-            {
 
-            }
             // Print a message indicating that Operation1 is being executed by the proxy service
             Console.WriteLine("Operation1 executing from proxy Service and calling Operation1 from real service");
             // Delegate the operation to the real service
@@ -77,15 +70,11 @@ namespace ProxyObject
             if (_access == "Admin")
             {
                 // Check if the real service instance is null
-                if (_realservice == null)
-                {
-                    // Instantiate the real service if it hasn't been created yet
-                    _realservice = new RealService();
-                }
-                else
-                {
 
-                }
+                    // Instantiate the real service if it hasn't been created yet
+                   
+                _realservice ??= new RealService();
+
                 // Print a message indicating that Operation2 is being executed by the proxy service
                 Console.WriteLine("Operation2 executing from proxy Service and calling Operation2 from real service");
                 // Delegate the operation to the real service
