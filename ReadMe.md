@@ -72,4 +72,6 @@ The project builds and runs on Visual Studio Community 2022.
 ![User user](https://github.com/Harikak09/ProxyDesignPattern/blob/master/Images/User.png?raw=true)
 
 ## Code Coverage
+
+Client Module is a part of UX so code coverage is not 100%. 
 ![Code Coverage](https://github.com/Harikak09/ProxyDesignPattern/blob/master/Images/CodeCoverage.png?raw=true)
